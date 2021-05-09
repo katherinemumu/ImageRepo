@@ -37,7 +37,7 @@ A great next step would be to implement this feature.
 The user interface can definitely be improved. 
 
 In addition: 
-- option to upload mnultiple files
+- option to upload multiple files
 - view images by recently uploaded/oldest uploads
 - ability to favourite images
 - ability to delete images
