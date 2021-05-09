@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <h1>
+        HI! THIS IS WHERE YOU UPLOAD THINGS!
+    </h1>
+
+    <div id="content">
+  
+        <form method="POST" 
+              action="" 
+              enctype="multipart/form-data">
+              {% csrf_token %}
+              {{ form.as_p }}
+            
+            <div>
+                <button type="submit"
+                        name="upload">
+                  Upload
+                </button>
+            </div>
+        </form>
+
+        {% if image_object %}
+            <h2>Successfully uploaded : {{image_object.title}}</h2>
+            <img src="{{ image_object.image.url }}" alt="picture can't load" style="max-height:400px">
+        {% endif %}
+    </div>
+{% endblock %}

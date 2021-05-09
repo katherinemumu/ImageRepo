@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <h1>
+        HOMEPAGE
+    </h1>
+
+    <div>
+        <table>
+            {% for row in array %}
+                <tr>
+                    <td><img src={{ row.0 }} style="width:500px;height:600px;"></td>
+                    <td><img src={{ row.1 }} style="width:500px;height:600px;"></td>
+                    <td><img src={{ row.2 }} style="width:500px;height:600px;"></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
