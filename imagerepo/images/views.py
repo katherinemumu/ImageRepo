@@ -24,7 +24,6 @@ def index(request):
         array.append(sub_array)
     print(array)
     return render(request, 'images/index.html', {'array': array})
-    # "../../../media/pusheeen.jpg"
 
 
     return HttpResponse(template.render({}, request))
