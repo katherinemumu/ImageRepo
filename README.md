@@ -1,7 +1,5 @@
 # ImageRepo
 
-This project was made for the Shopify Backend Developer Challenge. 
-
 ## Setup
 
 ### Virtual Environment
